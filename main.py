@@ -2,10 +2,12 @@ from flask import Flask, request, redirect, url_for, render_template
 import requests
 import json, os
 import apikey as a
+from dotenv import load_dotenv
 
+load_dotenv()
 app = Flask(__name__)
 headers = {
-    'X-CMC_PRO_API_KEY': a.mykey,
+    'X-CMC_PRO_API_KEY': os.getenv('MYKEY'),
     'Accepts': 'application/json'
 }
 url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
