@@ -1,7 +1,6 @@
 from flask import Flask, request, redirect, url_for, render_template
 import requests
 import json, os
-import apikey as a
 from dotenv import load_dotenv
 
 load_dotenv()
