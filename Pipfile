@@ -7,7 +7,6 @@ name = "pypi"
 flask = "*"
 requests = "*"
 gunicorn = "*"
-python-dotenv = "*"
 
 [dev-packages]
 

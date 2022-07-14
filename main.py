@@ -1,12 +1,7 @@
 from flask import Flask, request, redirect, url_for, render_template
 import requests
-import json, os
-from dotenv import load_dotenv
-# load_dotenv()
-
 from apikey import key
 
-load_dotenv()
 app = Flask(__name__)
 headers = {
     'X-CMC_PRO_API_KEY': key.MYKEY,
